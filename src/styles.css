@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@layer base {
+  body { @apply bg-[#f5f3ea] font-sans text-stone-900 antialiased; }
+  button { @apply cursor-pointer disabled:cursor-wait; }
+  button:focus-visible { @apply outline-2 outline-offset-2 outline-emerald-700; }
+}
+@layer components {
+  .primary { @apply flex w-full items-center justify-between rounded-lg bg-[#163e37] px-4 py-3 font-semibold text-white transition-colors hover:bg-emerald-900 disabled:opacity-70; }
+}
